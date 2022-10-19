@@ -1,0 +1,72 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* largura da fonte */
+}
+
+.container {
+    width: 1200px; /* largura */
+    margin: 0 auto; /* 0px para cima e automatico nas laterais */
+}
+
+.flex {
+    display: flex;
+    flex-direction: row; /* direção das caixas (box) na horizontal */
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .flex {
+    justify-content: space-between; /* espaços entre as caixas */
+}
+
+nav {
+    background-color: #202020;
+    padding: 20px 0px;
+}
+
+nav .flex {
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; /* letra maiuscula */    /* capitalaze = primeira letra maiuscula segunda minuscula*/ 
+}
+
+.banner {
+    background-image: url(../images/banner.png); /* inserir imagem como fundo, ao utilizar o background-image, precisamos definir o seu tamanho de altura(height) */
+    background-position: left; /* posicao da imagem */
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 435px;
+}
+
+.lancamentos {
+    padding: 70px 0px;
+}
+
+.lancamentos h2 {
+    font-size: 40px;
+}
+
+.lista-produtos {
+    flex-wrap: wrap;
+}
+
+.produto {
+    text-align: center; /* alinhar texto (center, right, left) */
+    width: 390px;
+    border: 1px solid rgb(214, 214, 214); /* borda: espessura, tipo (solida, tracejado,...) e cor */
+}
+
+.produto h4 {
+    font-size: 18px;
+}
+
+.produto h3 {
+    font-size: 24px;
+    font-weight: bold; /* fonte em negrito */
+}
